@@ -51,9 +51,10 @@ C
 ```
 
 # Installation
-```
+
 It can be imported via cmake:
 
+```cmake
 FetchContent_Declare(
     rs_systemtime
     GIT_REPOSITORY "https://github.com/IoIxD/rs_image.git"
