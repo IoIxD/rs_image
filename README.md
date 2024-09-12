@@ -30,8 +30,8 @@ C++
 ```cxx
 // Currently, only loading from your own data buffer is supported.
 std::ifstream is("image.png");
-std::istream_iterator<double> start(is), end;
-std::vector<double> image(start, end);
+std::istream_iterator<char> start(is), end;
+std::vector<char> image(start, end);
 
 auto img = new DynamicImage(image);
 std::println(std::cout, "loaded a {}x{} image", img.width(),
